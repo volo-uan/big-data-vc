@@ -1,0 +1,4 @@
+median = 1.68
+state_size = 4489
+exit=0
+peak=268435456

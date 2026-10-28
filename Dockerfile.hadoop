@@ -1,0 +1,8 @@
+# The stock image has no /data, so Docker would create that mount point as root
+# while the container runs as uid 1000 - and the NameNode dies with
+# "Cannot create directory /data/name/current". Creating it here, owned by the
+# right user, lets an empty named volume inherit the ownership.
+FROM apache/hadoop:3.4.3
+USER root
+RUN mkdir -p /data && chown hadoop:users /data
+USER hadoop

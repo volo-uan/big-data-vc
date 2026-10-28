@@ -1,0 +1,91 @@
+CSV
+VendorID                   int64
+tpep_pickup_datetime         str
+tpep_dropoff_datetime        str
+passenger_count          float64
+trip_distance            float64
+RatecodeID               float64
+store_and_fwd_flag           str
+PULocationID               int64
+DOLocationID               int64
+payment_type               int64
+fare_amount              float64
+extra                    float64
+mta_tax                  float64
+tip_amount               float64
+tolls_amount             float64
+improvement_surcharge    float64
+total_amount             float64
+congestion_surcharge     float64
+Airport_fee              float64
+dtype: object
+
+Index                        132
+VendorID                 1600000
+tpep_pickup_datetime     5400000
+tpep_dropoff_datetime    5400000
+passenger_count          1600000
+trip_distance            1600000
+RatecodeID               1600000
+store_and_fwd_flag       1800000
+PULocationID             1600000
+DOLocationID             1600000
+payment_type             1600000
+fare_amount              1600000
+extra                    1600000
+mta_tax                  1600000
+tip_amount               1600000
+tolls_amount             1600000
+improvement_surcharge    1600000
+total_amount             1600000
+congestion_surcharge     1600000
+Airport_fee              1600000
+dtype: int64
+
+==================================================
+
+PARQUET
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag                  str
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+
+Index                        132
+VendorID                  800000
+tpep_pickup_datetime     1600000
+tpep_dropoff_datetime    1600000
+passenger_count          1600000
+trip_distance            1600000
+RatecodeID               1600000
+store_and_fwd_flag       1800000
+PULocationID              800000
+DOLocationID              800000
+payment_type             1600000
+fare_amount              1600000
+extra                    1600000
+mta_tax                  1600000
+tip_amount               1600000
+tolls_amount             1600000
+improvement_surcharge    1600000
+total_amount             1600000
+congestion_surcharge     1600000
+Airport_fee              1600000
+dtype: int64
+exit=0
+peak=1157132288
