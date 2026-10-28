@@ -1,0 +1,10 @@
+/src/mean_chunks.py:9: DtypeWarning: Columns (0: store_and_fwd_flag) have mixed types. Specify dtype option on import or set low_memory=False.
+  for i, chunk in enumerate(
+chunk 1: rows=1000000 mean=3.4609 median=1.70
+chunk 2: rows=1000000 mean=3.2042 median=1.62
+chunk 3: rows=964624 mean=4.3149 median=1.69
+
+mean_of_means = 3.659983892646917
+global_mean   = 3.652169178958276
+exit=0
+peak=765919232
