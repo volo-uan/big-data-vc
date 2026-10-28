@@ -1,0 +1,14 @@
+# Postgres under exactly the same memory limit as the pandas experiment.
+# The point of this file is the mem_limit line: it is identical to compose-oom.yml.
+# No ports: - psql runs inside the container (docker compose exec), nothing on the host needs the database.
+services:
+  db:
+    image: postgres:16-alpine
+    mem_limit: 1280m
+    memswap_limit: 1280m
+    environment:
+      POSTGRES_PASSWORD: lab
+      POSTGRES_DB: taxi
+    volumes:
+      -  ../data:/data:ro
+      -  ../sql:/sql:ro
