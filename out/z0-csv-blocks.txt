@@ -1,0 +1,7 @@
+path        : /csv/yellow_tripdata_2024-01.csv
+size        : 310,608,360 B
+files       : 1
+blocks      : 10
+replication : 2.0
+disk usage  : 621,216,720 B
+map tasks   : 10

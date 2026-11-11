@@ -1,0 +1,87 @@
+packageJobJar: [] [/opt/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.4.3.jar] /tmp/streamjob2039472612314453451.jar tmpDir=null
+2026-11-11 20:33:22 INFO  DefaultNoHARMFailoverProxyProvider:64 - Connecting to ResourceManager at resourcemanager/172.20.0.2:8032
+2026-11-11 20:33:22 INFO  DefaultNoHARMFailoverProxyProvider:64 - Connecting to ResourceManager at resourcemanager/172.20.0.2:8032
+2026-11-11 20:33:22 INFO  JobResourceUploader:907 - Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/hadoop/.staging/job_1794429142258_0001
+2026-11-11 20:33:24 INFO  FileInputFormat:267 - Total input files to process : 1
+2026-11-11 20:33:24 INFO  JobSubmitter:203 - number of splits:10
+2026-11-11 20:33:24 INFO  JobSubmitter:299 - Submitting tokens for job: job_1794429142258_0001
+2026-11-11 20:33:24 INFO  JobSubmitter:300 - Executing with tokens: []
+2026-11-11 20:33:24 INFO  Configuration:2898 - resource-types.xml not found
+2026-11-11 20:33:24 INFO  ResourceUtils:476 - Unable to find 'resource-types.xml'.
+2026-11-11 20:33:24 INFO  YarnClientImpl:356 - Submitted application application_1794429142258_0001
+2026-11-11 20:33:24 INFO  Job:1681 - The url to track the job: http://resourcemanager:8088/proxy/application_1794429142258_0001/
+2026-11-11 20:33:24 INFO  Job:1726 - Running job: job_1794429142258_0001
+2026-11-11 20:33:30 INFO  Job:1747 - Job job_1794429142258_0001 running in uber mode : false
+2026-11-11 20:33:30 INFO  Job:1754 -  map 0% reduce 0%
+2026-11-11 20:33:37 INFO  Job:1754 -  map 10% reduce 0%
+2026-11-11 20:33:41 INFO  Job:1754 -  map 30% reduce 0%
+2026-11-11 20:33:42 INFO  Job:1754 -  map 70% reduce 0%
+2026-11-11 20:33:44 INFO  Job:1754 -  map 80% reduce 0%
+2026-11-11 20:33:45 INFO  Job:1754 -  map 90% reduce 0%
+2026-11-11 20:33:46 INFO  Job:1754 -  map 100% reduce 0%
+2026-11-11 20:33:47 INFO  Job:1754 -  map 100% reduce 100%
+2026-11-11 20:33:47 INFO  Job:1765 - Job job_1794429142258_0001 completed successfully
+2026-11-11 20:33:47 INFO  Job:1772 - Counters: 56
+	File System Counters
+		FILE: Number of bytes read=53761
+		FILE: Number of bytes written=3567703
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=310646264
+		HDFS: Number of bytes written=3861
+		HDFS: Number of read operations=35
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=10
+		Launched reduce tasks=1
+		Data-local map tasks=9
+		Rack-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=66103
+		Total time spent by all reduces in occupied slots (ms)=2553
+		Total time spent by all map tasks (ms)=66103
+		Total time spent by all reduce tasks (ms)=2553
+		Total vcore-milliseconds taken by all map tasks=66103
+		Total vcore-milliseconds taken by all reduce tasks=2553
+		Total megabyte-milliseconds taken by all map tasks=67689472
+		Total megabyte-milliseconds taken by all reduce tasks=2614272
+	Map-Reduce Framework
+		Map input records=2964625
+		Map output records=2964615
+		Map output bytes=31399400
+		Map output materialized bytes=53815
+		Input split bytes=1040
+		Combine input records=2964615
+		Combine output records=2374
+		Reduce input groups=260
+		Reduce shuffle bytes=53815
+		Reduce input records=2374
+		Reduce output records=260
+		Spilled Records=4748
+		Shuffled Maps =10
+		Failed Shuffles=0
+		Merged Map outputs=10
+		GC time elapsed (ms)=469
+		CPU time spent (ms)=25700
+		Physical memory (bytes) snapshot=3226034176
+		Virtual memory (bytes) snapshot=30480338944
+		Total committed heap usage (bytes)=2179989504
+		Peak Map Physical memory (bytes)=325033984
+		Peak Map Virtual memory (bytes)=2777001984
+		Peak Reduce Physical memory (bytes)=201461760
+		Peak Reduce Virtual memory (bytes)=2774208512
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=310645224
+	File Output Format Counters 
+		Bytes Written=3861
+2026-11-11 20:33:47 INFO  StreamJob:1029 - Output directory: /out/z2-sumcount

@@ -1,0 +1,85 @@
+packageJobJar: [] [/opt/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.4.3.jar] /tmp/streamjob2607763750910614311.jar tmpDir=null
+2026-11-11 19:52:43 INFO  DefaultNoHARMFailoverProxyProvider:64 - Connecting to ResourceManager at resourcemanager/172.20.0.3:8032
+2026-11-11 19:52:43 INFO  DefaultNoHARMFailoverProxyProvider:64 - Connecting to ResourceManager at resourcemanager/172.20.0.3:8032
+2026-11-11 19:52:43 INFO  JobResourceUploader:907 - Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/hadoop/.staging/job_1794426546180_0001
+2026-11-11 19:52:44 INFO  FileInputFormat:267 - Total input files to process : 1
+2026-11-11 19:52:44 INFO  JobSubmitter:203 - number of splits:10
+2026-11-11 19:52:44 INFO  JobSubmitter:299 - Submitting tokens for job: job_1794426546180_0001
+2026-11-11 19:52:44 INFO  JobSubmitter:300 - Executing with tokens: []
+2026-11-11 19:52:45 INFO  Configuration:2898 - resource-types.xml not found
+2026-11-11 19:52:45 INFO  ResourceUtils:476 - Unable to find 'resource-types.xml'.
+2026-11-11 19:52:45 INFO  YarnClientImpl:356 - Submitted application application_1794426546180_0001
+2026-11-11 19:52:45 INFO  Job:1681 - The url to track the job: http://resourcemanager:8088/proxy/application_1794426546180_0001/
+2026-11-11 19:52:45 INFO  Job:1726 - Running job: job_1794426546180_0001
+2026-11-11 19:52:50 INFO  Job:1747 - Job job_1794426546180_0001 running in uber mode : false
+2026-11-11 19:52:50 INFO  Job:1754 -  map 0% reduce 0%
+2026-11-11 19:52:57 INFO  Job:1754 -  map 10% reduce 0%
+2026-11-11 19:53:00 INFO  Job:1754 -  map 70% reduce 0%
+2026-11-11 19:53:02 INFO  Job:1754 -  map 80% reduce 0%
+2026-11-11 19:53:04 INFO  Job:1754 -  map 90% reduce 0%
+2026-11-11 19:53:05 INFO  Job:1754 -  map 100% reduce 0%
+2026-11-11 19:53:06 INFO  Job:1754 -  map 100% reduce 100%
+2026-11-11 19:53:06 INFO  Job:1765 - Job job_1794426546180_0001 completed successfully
+2026-11-11 19:53:06 INFO  Job:1772 - Counters: 55
+	File System Counters
+		FILE: Number of bytes read=52159
+		FILE: Number of bytes written=3563817
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=310646264
+		HDFS: Number of bytes written=3526
+		HDFS: Number of read operations=35
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=10
+		Launched reduce tasks=1
+		Data-local map tasks=10
+		Total time spent by all maps in occupied slots (ms)=59666
+		Total time spent by all reduces in occupied slots (ms)=3433
+		Total time spent by all map tasks (ms)=59666
+		Total time spent by all reduce tasks (ms)=3433
+		Total vcore-milliseconds taken by all map tasks=59666
+		Total vcore-milliseconds taken by all reduce tasks=3433
+		Total megabyte-milliseconds taken by all map tasks=61097984
+		Total megabyte-milliseconds taken by all reduce tasks=3515392
+	Map-Reduce Framework
+		Map input records=2964625
+		Map output records=2964615
+		Map output bytes=25470170
+		Map output materialized bytes=52213
+		Input split bytes=1040
+		Combine input records=2964615
+		Combine output records=2374
+		Reduce input groups=260
+		Reduce shuffle bytes=52213
+		Reduce input records=2374
+		Reduce output records=260
+		Spilled Records=4748
+		Shuffled Maps =10
+		Failed Shuffles=0
+		Merged Map outputs=10
+		GC time elapsed (ms)=478
+		CPU time spent (ms)=23760
+		Physical memory (bytes) snapshot=3266072576
+		Virtual memory (bytes) snapshot=30494842880
+		Total committed heap usage (bytes)=2123366400
+		Peak Map Physical memory (bytes)=334659584
+		Peak Map Virtual memory (bytes)=2776461312
+		Peak Reduce Physical memory (bytes)=212451328
+		Peak Reduce Virtual memory (bytes)=2781622272
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=310645224
+	File Output Format Counters 
+		Bytes Written=3526
+2026-11-11 19:53:06 INFO  StreamJob:1029 - Output directory: /out/z2-avg
