@@ -1,0 +1,9 @@
+[project]
+name = "big-data-project-volodymyr-chuchka"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "pandas>=3.1.1",
+    "pyarrow>=26.0.1",
+    "pyspark==3.5.9",
+]

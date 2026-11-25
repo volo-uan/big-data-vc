@@ -1,0 +1,25 @@
+# W5: a Spark client next to the W4 cluster. Spark itself is not a service: every program you submit
+# asks YARN for containers (one for the application master, the rest for executors), like a MapReduce job.
+# Always pass all three files, in this order:
+#   docker compose -f compose-hdfs.yml -f compose-yarn.yml -f compose-spark.yml up -d
+# Spark is the unpacked spark-3.5.9-bin-hadoop3 in ./spark (downloaded in Z0, not in git).
+# 3.5 and not 4.x: Spark 4 needs Java 17, the bd-hadoop:3.4.3 image has Java 11.
+
+services:
+  spark:
+    image: bd-hadoop:3.4.3            # Java 11 and Python 3.10, the same as on the YARN nodes
+    hostname: spark-client            # executors connect back to the driver by this name
+    command: ["sleep", "infinity"]    # we run programs in it with `exec`
+    environment:
+      CORE-SITE.XML_fs.defaultFS: hdfs://namenode:9000
+      YARN-SITE.XML_yarn.resourcemanager.hostname: resourcemanager
+      HADOOP_CONF_DIR: /opt/hadoop/etc/hadoop     # where spark-submit finds the two settings above
+      SPARK_HOME: /opt/spark
+      PYSPARK_PYTHON: python3                     # the Python of the executors on the YARN nodes
+    # No published port 4040: on YARN the Spark UI of the driver answers only the ResourceManager proxy and
+    # redirects everyone else to resourcemanager:8088, a name your browser does not know. While a program runs,
+    # open http://localhost:8088/proxy/<application id>/ (the id is in the list on http://localhost:8088).
+    volumes:
+      - ./spark:/opt/spark:ro
+      - ./src:/src:ro
+      - ./out:/out

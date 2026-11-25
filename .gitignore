@@ -18,3 +18,4 @@ volumes/
 minio-data/
 
 # Note: out/ is NOT ignored - several tasks hand in their results as files in out/.
+spark/
